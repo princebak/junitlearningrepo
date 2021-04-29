@@ -1,5 +1,6 @@
 package helloworldtest;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import helloworld.JUnitHelloWorld;
@@ -34,6 +35,14 @@ public class JUnitHelloWorldTest {
         JUnitHelloWorld helloWorld = new JUnitHelloWorld();
         int number = 8;
         assertTrue("The Number "+number+" is not Even", helloWorld.isEven(number));
+    }
+
+    @Test
+    public void isOddTest() {
+        System.out.println("Test 3");
+        JUnitHelloWorld helloWorld = new JUnitHelloWorld();
+        int number = 7;
+        assertEquals(number, helloWorld.isOdd(number));
     }
 
     @After
