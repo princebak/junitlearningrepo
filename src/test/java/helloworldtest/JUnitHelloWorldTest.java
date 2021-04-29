@@ -13,12 +13,12 @@ import org.junit.Test;
 public class JUnitHelloWorldTest {
     @BeforeClass
     public static void beforeClass() {
-        System.out.println("Before Class");
+        System.out.println("Before All Test Cases");
     }
 
     @Before
     public void before() {
-        System.out.println("Before Test Case");
+        System.out.println("Before Every Test Case");
     }
 
     @Test
@@ -47,11 +47,11 @@ public class JUnitHelloWorldTest {
 
     @After
     public void after() {
-        System.out.println("After Test Case");
+        System.out.println("After Every Test Case");
     }
 
     @AfterClass
     public static void afterClass() {
-        System.out.println("After Class");
+        System.out.println("After All Test Cases");
     }
 }
